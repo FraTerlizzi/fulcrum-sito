@@ -33,11 +33,12 @@ python -m http.server 8080
 
 Poi apri http://localhost:8080
 
-**Pubblicazione:** sull'hosting (Netlify, Cloudflare Pages, GitHub Pages…) imposta `fulcrum` come cartella da pubblicare, così logo, social e strumenti restano fuori dal sito.
+**Pubblicazione:** il sito è online su GitHub Pages, https://fraterlizzi.github.io/fulcrum-sito/
+Ogni push su `main` lo ripubblica in automatico (`.github/workflows/pages.yml`). Viene pubblicata solo la cartella `fulcrum/`: logo, social e strumenti restano fuori dal sito.
 
-**Prima della messa online**
+**Ancora da fare**
 
-- Sostituire `[DOMINIO]` in `fulcrum/index.html` (canonical, Open Graph, dati strutturati) con il dominio definitivo.
+- Con un dominio proprio: impostarlo in Settings → Pages e aggiornare l'indirizzo in `fulcrum/index.html` (canonical, Open Graph, dati strutturati).
 - Creare la pagina della privacy policy e collegarla ai link `href="#"`.
 - Il modulo non invia nulla a un server: prepara un messaggio WhatsApp per il 328 134 8501. Per ricevere le richieste anche via email serve un backend o un servizio come Formspree (vedi il commento `shortcut:` in `fulcrum/main.js`).
 - I font arrivano da Google Fonts: per il GDPR conviene ospitarli insieme al sito.
