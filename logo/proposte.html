@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo · Tre proposte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>
+    :root { --carta: #f4f2ed; --bianco: #fbfaf7; --ink: #151515; --grafite: #5f5b55; --filo: #dcd7cd; --notte: #1f2c3f; --ottone: #9a7b4f; --oro: #c2a272; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--carta); color: var(--ink); font: 400 1rem/1.6 "Instrument Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+    header { padding: 4rem 0 2rem; }
+    h1, h2 { margin: 0; font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -.015em; line-height: 1; }
+    h1 { font-size: clamp(2.6rem, 7vw, 4.5rem); }
+    h1 em, h2 em { color: var(--notte); }
+    .sotto { max-width: 40em; margin: 1rem 0 0; color: var(--grafite); }
+    .proposta { padding: 4rem 0; border-top: 1px solid var(--ink); }
+    .testa { display: grid; gap: 1rem 3rem; margin-bottom: 2.5rem; }
+    @media (min-width: 860px) { .testa { grid-template-columns: 1fr 1.3fr; align-items: end; } }
+    .lettera { display: block; margin-bottom: .6rem; font-size: .7rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--ottone); }
+    h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    .idea { margin: 0; color: var(--grafite); }
+    .idea strong { color: var(--ink); font-weight: 500; }
+    .tavole { display: grid; gap: 1px; background: var(--filo); border: 1px solid var(--filo); }
+    @media (min-width: 760px) { .tavole { grid-template-columns: 1fr 1fr; } }
+    .tavola { display: grid; place-items: center; min-height: 300px; padding: 2.5rem; background: var(--bianco); }
+    .tavola.scura { background: var(--ink); color: var(--carta); }
+    .tavola.notte { background: var(--notte); color: var(--carta); }
+    .tavola.larga { grid-column: 1 / -1; min-height: 220px; }
+    .marchio { width: min(260px, 70%); height: auto; }
+    .lockup { display: flex; align-items: center; gap: 1.1rem; }
+    .lockup svg { width: 74px; height: auto; flex: none; }
+    .lockup b { display: block; font: 400 2rem/1 "Instrument Serif", serif; }
+    .lockup small { display: block; margin-top: .4rem; font-size: .62rem; font-weight: 500; letter-spacing: .24em; text-transform: uppercase; opacity: .65; }
+    .icone { display: flex; align-items: end; gap: 1.5rem; }
+    .icona { display: grid; place-items: center; background: var(--ink); color: var(--carta); border-radius: 22%; }
+    .icona svg { width: 70%; height: auto; }
+    .didascalia { margin-top: .75rem; font-size: .72rem; color: var(--grafite); text-align: center; }
+    footer { padding: 3rem 0 4rem; border-top: 1px solid var(--ink); color: var(--grafite); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <!-- I tre marchi. Colori: currentColor = inchiostro (cambia con lo sfondo), ottone = accento -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <!-- A · Il segno d'inserimento -->
+    <symbol id="logo-a" viewBox="4 0 140 130">
+      <text x="22" y="96" font-family="Instrument Serif, serif" font-size="112" fill="currentColor">G</text>
+      <text x="85" y="96" font-family="Instrument Serif, serif" font-size="112" fill="currentColor">N</text>
+      <path d="M66.5 120 L76.5 98 L86.5 120" fill="none" stroke="var(--ottone)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- B · Una linea sola -->
+    <symbol id="logo-b" viewBox="0 0 160 100">
+      <!-- parte dalla traversa della G, gira in senso orario, sale con una legatura alla N; la risalita sull'asta sinistra si sovrappone e non si vede -->
+      <path d="M52 50 H70 A30 30 0 1 1 63 30.7 L90 20 V80 V20 L130 80 V20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="146" cy="80" r="5.2" fill="var(--ottone)"/>
+    </symbol>
+    <!-- C · La legatura -->
+    <symbol id="logo-c" viewBox="0 0 130 100">
+      <path d="M63 30.7 A30 30 0 1 0 70 50" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="butt"/>
+      <path d="M70 20 V80 M110 20 V80" fill="none" stroke="currentColor" stroke-width="3.6"/>
+      <path d="M68.2 20 H80 L111.8 80 H100 Z" fill="currentColor"/>
+      <path d="M54 50 H70" stroke="var(--ottone)" stroke-width="3.6"/>
+    </symbol>
+  </svg>
+
+  <header class="wrap">
+    <h1>Logo, <em>tre proposte</em>.</h1>
+    <p class="sotto">Niente parentesi, circuiti, ingranaggi o frecce del mouse. Tre idee che parlano del modo di lavorare di Giuseppe, non solo del mestiere. Stessa palette del sito: inchiostro, carta e un solo accento ottone.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta A</span><h2>Il segno <em>d'inserimento</em></h2></div>
+        <p class="idea">Il piccolo “‸” sotto le iniziali è il segno con cui i correttori di bozze indicano <strong>“qui va inserito ciò che manca”</strong>. In informatica lo stesso segno ha un nome preciso: <strong>caret</strong>, il cursore in cui scrivi. Un solo simbolo, due significati: Giuseppe è chi aggiunge alla tua attività il pezzo che le manca.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" role="img" aria-label="Proposta A su chiaro"><use href="#logo-a"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" role="img" aria-label="Proposta A su scuro"><use href="#logo-a"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="4 0 140 130" aria-hidden="true"><use href="#logo-a"/></svg><span><b>Giuseppe Napoletano</b><small>Sviluppatore web</small></span></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="4 0 140 130"><use href="#logo-a"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="4 0 140 130"><use href="#logo-a"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="4 0 140 130"><use href="#logo-a"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="4 0 140 130"><use href="#logo-a"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta B</span><h2>Una linea <em>sola</em></h2></div>
+        <p class="idea">G e N disegnate <strong>con un unico tratto, senza mai staccare la penna</strong>, chiuso da un punto. È il servizio raccontato in un segno: un solo referente dall'inizio alla fine. Il punto finale è quello che chiude una frase, e anche un'istruzione di codice: lavoro finito.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" role="img" aria-label="Proposta B su chiaro"><use href="#logo-b"/></svg></div>
+        <div class="tavola notte"><svg class="marchio" role="img" aria-label="Proposta B su blu notte"><use href="#logo-b"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="0 0 160 100" aria-hidden="true"><use href="#logo-b"/></svg><span><b>Giuseppe Napoletano</b><small>Sviluppatore web</small></span></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="0 0 160 100"><use href="#logo-b"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="0 0 160 100"><use href="#logo-b"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="0 0 160 100"><use href="#logo-b"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="0 0 160 100"><use href="#logo-b"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta C</span><h2>La <em>legatura</em></h2></div>
+        <p class="idea">Un monogramma in cui <strong>G e N condividono la stessa asta</strong>, come nelle legature dei caratteri tipografici classici. Il contrasto tra filetti sottili e diagonale piena viene dalla tradizione tipografica italiana (pensa a Bodoni). La traversa ottone della G è il punto d'incontro: <strong>dove l'esigenza del cliente si unisce al lavoro tecnico</strong>.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" role="img" aria-label="Proposta C su chiaro"><use href="#logo-c"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" role="img" aria-label="Proposta C su scuro"><use href="#logo-c"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="0 0 130 100" aria-hidden="true"><use href="#logo-c"/></svg><span><b>Giuseppe Napoletano</b><small>Sviluppatore web</small></span></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="0 0 130 100"><use href="#logo-c"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="0 0 130 100"><use href="#logo-c"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="0 0 130 100"><use href="#logo-c"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="0 0 130 100"><use href="#logo-c"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Bozze di concept. Il marchio scelto verrà rifinito (spessori, spaziature, versione per stampa) e convertito in tracciati vettoriali, così non dipenderà dal font installato.</footer>
+</body>
+</html>

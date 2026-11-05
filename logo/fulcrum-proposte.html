@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fulcrum · Proposte logo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>
+    :root { --carta: #f4f2ed; --bianco: #fbfaf7; --ink: #151515; --grafite: #5f5b55; --filo: #dcd7cd; --notte: #1f2c3f; --ottone: #9a7b4f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--carta); color: var(--ink); font: 400 1rem/1.6 "Instrument Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+    header { padding: 4rem 0 2rem; }
+    h1, h2 { margin: 0; font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -.015em; line-height: 1; }
+    h1 { font-size: clamp(2.6rem, 7vw, 4.5rem); }
+    h1 em, h2 em { color: var(--notte); }
+    .sotto { max-width: 42em; margin: 1rem 0 0; color: var(--grafite); }
+    .proposta { padding: 4rem 0; border-top: 1px solid var(--ink); }
+    .testa { display: grid; gap: 1rem 3rem; margin-bottom: 2.5rem; }
+    @media (min-width: 860px) { .testa { grid-template-columns: 1fr 1.3fr; align-items: end; } }
+    .lettera { display: block; margin-bottom: .6rem; font-size: .7rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--ottone); }
+    h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    .idea { margin: 0; color: var(--grafite); }
+    .idea strong { color: var(--ink); font-weight: 500; }
+    .tavole { display: grid; gap: 1px; background: var(--filo); border: 1px solid var(--filo); }
+    @media (min-width: 760px) { .tavole { grid-template-columns: 1fr 1fr; } }
+    .tavola { display: grid; place-items: center; min-height: 280px; padding: 2.5rem; background: var(--bianco); }
+    .tavola.scura { background: var(--ink); color: var(--carta); --ottone: #c2a272; }
+    .tavola.larga { grid-column: 1 / -1; min-height: 200px; }
+    .marchio { width: min(220px, 60%); height: auto; }
+    /* wordmark minuscolo: morbido e moderno, nessuno spigolo nel tono */
+    .lockup { display: flex; align-items: center; gap: .9rem; }
+    .lockup svg { width: 64px; height: auto; flex: none; }
+    .lockup b { font: 600 2.6rem/1 "Instrument Sans", sans-serif; letter-spacing: -.045em; }
+    .icone { display: flex; align-items: end; gap: 1.5rem; }
+    .icona { display: grid; place-items: center; background: var(--ink); color: var(--carta); --ottone: #c2a272; border-radius: 28%; }
+    .icona svg { width: 72%; height: auto; }
+    .didascalia { margin-top: .75rem; font-size: .72rem; color: var(--grafite); text-align: center; }
+    footer { padding: 3rem 0 4rem; border-top: 1px solid var(--ink); color: var(--grafite); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <!-- Quattro marchi, tutti senza spigoli: solo cerchi, capsule e tratti con estremità arrotondate -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <!-- A · Il punto d'appoggio: capsula inclinata che poggia su un cerchio -->
+    <symbol id="f-a" viewBox="0 0 64 40">
+      <rect x="7" y="13" width="50" height="7" rx="3.5" fill="currentColor" transform="rotate(-12 32 16.5)"/>
+      <circle cx="32" cy="27" r="6.5" fill="var(--ottone)"/>
+    </symbol>
+    <!-- B · La cupola: capsula in equilibrio su una mezza sfera -->
+    <symbol id="f-b" viewBox="0 0 64 40">
+      <rect x="8" y="10" width="48" height="7" rx="3.5" fill="currentColor"/>
+      <path d="M21 30a11 11 0 0 1 22 0z" fill="var(--ottone)" stroke="var(--ottone)" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+    <!-- C · La f: lettera a tratto tondo che poggia sul suo punto -->
+    <symbol id="f-c" viewBox="14 2 36 42">
+      <path d="M30 30V15a7 7 0 0 1 7-7h4M22 17h18" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="30" cy="38.5" r="3.4" fill="var(--ottone)"/>
+    </symbol>
+    <!-- D · La trave che lavora: linea che si flette sotto il peso -->
+    <symbol id="f-d" viewBox="0 3 64 40">
+      <path d="M8 13q24 14 48 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="32" cy="29" r="6.5" fill="var(--ottone)"/>
+    </symbol>
+  </svg>
+
+  <header class="wrap">
+    <h1>Fulcrum, <em>quattro marchi</em>.</h1>
+    <p class="sotto">Minimal, moderni e senza spigoli: solo cerchi, capsule e tratti arrotondati. Tutti partono dalla stessa idea, la leva in equilibrio sul suo punto d'appoggio, e usano la palette del sito: inchiostro, carta e un accento ottone. La scritta è minuscola, per un tono più morbido e contemporaneo.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta A</span><h2>Il punto <em>d'appoggio</em></h2></div>
+        <p class="idea">Una capsula inclinata che poggia su un cerchio. È la leva ridotta all'essenziale: <strong>due forme, nessun angolo</strong>. L'inclinazione dà movimento, il cerchio ottone è il punto fermo su cui tutto si regge.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" viewBox="0 0 64 40" role="img" aria-label="Proposta A su chiaro"><use href="#f-a"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" viewBox="0 0 64 40" role="img" aria-label="Proposta A su scuro"><use href="#f-a"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="0 0 64 40" aria-hidden="true"><use href="#f-a"/></svg><b>fulcrum</b></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="0 0 64 40"><use href="#f-a"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="0 0 64 40"><use href="#f-a"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="0 0 64 40"><use href="#f-a"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="0 0 64 40"><use href="#f-a"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta B</span><h2>La <em>cupola</em></h2></div>
+        <p class="idea">Una capsula orizzontale in perfetto equilibrio su una mezza sfera. Più statico e istituzionale della A: comunica <strong>stabilità e affidabilità</strong>, il progetto che sta in piedi negli anni.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" viewBox="0 0 64 40" role="img" aria-label="Proposta B su chiaro"><use href="#f-b"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" viewBox="0 0 64 40" role="img" aria-label="Proposta B su scuro"><use href="#f-b"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="0 0 64 40" aria-hidden="true"><use href="#f-b"/></svg><b>fulcrum</b></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="0 0 64 40"><use href="#f-b"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="0 0 64 40"><use href="#f-b"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="0 0 64 40"><use href="#f-b"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="0 0 64 40"><use href="#f-b"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta C</span><h2>La <em>f</em></h2></div>
+        <p class="idea">La iniziale minuscola disegnata con un tratto tondo, che poggia su un piccolo punto ottone. È la più <strong>riconoscibile come lettera</strong>: funziona da sola come icona e si lega subito al nome.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" viewBox="14 2 36 42" role="img" aria-label="Proposta C su chiaro" style="width:min(120px,40%)"><use href="#f-c"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" viewBox="14 2 36 42" role="img" aria-label="Proposta C su scuro" style="width:min(120px,40%)"><use href="#f-c"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="14 2 36 42" aria-hidden="true" style="width:40px"><use href="#f-c"/></svg><b>fulcrum</b></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="14 2 36 42" style="width:46%"><use href="#f-c"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="14 2 36 42" style="width:46%"><use href="#f-c"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="14 2 36 42" style="width:46%"><use href="#f-c"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="14 2 36 42" style="width:46%"><use href="#f-c"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="proposta">
+      <div class="testa">
+        <div><span class="lettera">Proposta D</span><h2>La trave <em>che lavora</em></h2></div>
+        <p class="idea">Una linea che si flette leggermente sopra il punto d'appoggio, come una trave sotto il peso. È la più <strong>calda e umana</strong>: la curva ricorda un sorriso, utile se volete un tono accogliente più che tecnico.</p>
+      </div>
+      <div class="tavole">
+        <div class="tavola"><svg class="marchio" viewBox="0 3 64 40" role="img" aria-label="Proposta D su chiaro"><use href="#f-d"/></svg></div>
+        <div class="tavola scura"><svg class="marchio" viewBox="0 3 64 40" role="img" aria-label="Proposta D su scuro"><use href="#f-d"/></svg></div>
+        <div class="tavola larga"><div class="lockup"><svg viewBox="0 3 64 40" aria-hidden="true"><use href="#f-d"/></svg><b>fulcrum</b></div></div>
+        <div class="tavola larga"><div>
+          <div class="icone">
+            <div class="icona" style="width:96px;height:96px"><svg viewBox="0 3 64 40"><use href="#f-d"/></svg></div>
+            <div class="icona" style="width:48px;height:48px"><svg viewBox="0 3 64 40"><use href="#f-d"/></svg></div>
+            <div class="icona" style="width:32px;height:32px"><svg viewBox="0 3 64 40"><use href="#f-d"/></svg></div>
+            <div class="icona" style="width:16px;height:16px"><svg viewBox="0 3 64 40"><use href="#f-d"/></svg></div>
+          </div>
+          <p class="didascalia">Icona app / profilo social · 96, 48, 32, 16 px</p>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Bozze di concept. Il marchio scelto verrà rifinito, esportato in file SVG per fondi chiari e scuri, e inserito nel sito come logo e come icona della scheda del browser.</footer>
+</body>
+</html>

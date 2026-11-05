@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 120 80" width="480" height="320">
+  <title>Giuseppe Napoletano</title>
+  <!-- Marchio GN a legatura · versione inchiostro, per fondi chiari -->
+  <g fill="none" stroke="#151515" stroke-width="3.6">
+    <path d="M63 30.7A30 30 0 1 0 70 50"/>
+    <path d="M70 20v60M110 20v60"/>
+  </g>
+  <path d="M68.2 20H80l31.8 60H100z" fill="#151515"/>
+  <path d="M54 50h14.2" stroke="#9a7b4f" stroke-width="3.6"/>
+</svg>
